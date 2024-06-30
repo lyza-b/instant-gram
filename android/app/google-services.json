@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "441612072224",
+    "project_id": "my-insagram-clone-lyza",
+    "storage_bucket": "my-insagram-clone-lyza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441612072224:android:84d226d3b0e29367129345",
+        "android_client_info": {
+          "package_name": "com.example.my_nstagram_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbVj79AvFum6o9p33pKUSpGBuJEoimMek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441612072224:android:0e5d2f77e2665f5e129345",
+        "android_client_info": {
+          "package_name": "com.example.my_ui_design_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbVj79AvFum6o9p33pKUSpGBuJEoimMek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
