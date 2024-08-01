@@ -6,7 +6,7 @@ import 'firebase_options.dart';
 
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+ WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
   options: DefaultFirebaseOptions.currentPlatform,
 );
@@ -40,7 +40,7 @@ class HomePage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 77, 75, 75),
-        title: Text('Hooks Riverpod'),
+        title: const Text('Hooks Riverpod'),
         centerTitle: true,
       ),
     );
