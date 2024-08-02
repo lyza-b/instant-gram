@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:my_ui_design_app/features/auth/backend/authenticator.dart';
+import 'package:my_ui_design_app/features/auth/constants/constants.dart';
 import 'firebase_options.dart';
+import 'dart:developer' as devtools show log;
 
+extension Log on Object {
+  void log() => devtools.log(toString());
+}
 
 void main() async {
  WidgetsFlutterBinding.ensureInitialized();
@@ -42,6 +48,21 @@ class HomePage extends ConsumerWidget {
         backgroundColor: const Color.fromARGB(255, 77, 75, 75),
         title: const Text('Hooks Riverpod'),
         centerTitle: true,
+        
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            onPressed: () async {
+             final result  = await Authenticator().loginWithGoogle();
+            result.log();
+            },
+            child: const Text(Constants.signInWithGoogle),
+          )
+
+        ],
       ),
     );
   }

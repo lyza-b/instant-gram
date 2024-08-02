@@ -1,4 +1,4 @@
-package com.example.my_ui_design_app
+package com.lyza.app
 
 import io.flutter.embedding.android.FlutterActivity
 
