@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -47,28 +41,51 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBbVj79AvFum6o9p33pKUSpGBuJEoimMek',
-    appId: '1:441612072224:android:0e5d2f77e2665f5e129345',
-    messagingSenderId: '441612072224',
-    projectId: 'my-insagram-clone-lyza',
-    storageBucket: 'my-insagram-clone-lyza.appspot.com',
+    apiKey: 'AIzaSyBD4ddLbVWWRmJvlm05981IF3ft0teVpEc',
+    appId: '1:438085580346:android:9206f7cb8f36a2295ca703',
+    messagingSenderId: '438085580346',
+    projectId: 'lyza-insta-clone',
+    storageBucket: 'lyza-insta-clone.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCdI4dmLK4j_o5HsQAkhIXlWa9JxPx-3b8',
-    appId: '1:441612072224:ios:46a558c3bd9f7a2a129345',
-    messagingSenderId: '441612072224',
-    projectId: 'my-insagram-clone-lyza',
-    storageBucket: 'my-insagram-clone-lyza.appspot.com',
+    apiKey: 'AIzaSyC8NgZHumelgRwsmURzXYu1RshckuO0llc',
+    appId: '1:438085580346:ios:4108c78ca47ad5655ca703',
+    messagingSenderId: '438085580346',
+    projectId: 'lyza-insta-clone',
+    storageBucket: 'lyza-insta-clone.appspot.com',
+    iosClientId: '438085580346-ofki0d0s2i2cft9vtteulmipov0o7l0v.apps.googleusercontent.com',
     iosBundleId: 'com.example.myUiDesignApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDLjydPy_qgT-1RYzvbjFYItuqlmzUaSLg',
-    appId: '1:441612072224:web:7dae0d915fb52964129345',
-    messagingSenderId: '441612072224',
-    projectId: 'my-insagram-clone-lyza',
-    authDomain: 'my-insagram-clone-lyza.firebaseapp.com',
-    storageBucket: 'my-insagram-clone-lyza.appspot.com',
+    apiKey: 'AIzaSyAwbZHtGh01LCjNTXpR7xUmHthvDz49tMU',
+    appId: '1:438085580346:web:95315f13e7927c7d5ca703',
+    messagingSenderId: '438085580346',
+    projectId: 'lyza-insta-clone',
+    authDomain: 'lyza-insta-clone.firebaseapp.com',
+    storageBucket: 'lyza-insta-clone.appspot.com',
+    measurementId: 'G-9F64G549Y8',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAwbZHtGh01LCjNTXpR7xUmHthvDz49tMU',
+    appId: '1:438085580346:web:1d898ad6c3e2de8a5ca703',
+    messagingSenderId: '438085580346',
+    projectId: 'lyza-insta-clone',
+    authDomain: 'lyza-insta-clone.firebaseapp.com',
+    storageBucket: 'lyza-insta-clone.appspot.com',
+    measurementId: 'G-4P03Z1BJ6C',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyC8NgZHumelgRwsmURzXYu1RshckuO0llc',
+    appId: '1:438085580346:ios:4108c78ca47ad5655ca703',
+    messagingSenderId: '438085580346',
+    projectId: 'lyza-insta-clone',
+    storageBucket: 'lyza-insta-clone.appspot.com',
+    iosClientId: '438085580346-ofki0d0s2i2cft9vtteulmipov0o7l0v.apps.googleusercontent.com',
+    iosBundleId: 'com.example.myUiDesignApp',
+  );
+
 }
