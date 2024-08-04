@@ -1,4 +1,4 @@
-# my_ui_design_app
+# lyza-insta-clone
 
 A new Flutter project.
 
