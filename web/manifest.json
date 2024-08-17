@@ -1,6 +1,6 @@
 {
-    "name": "my_ui_design_app",
-    "short_name": "my_ui_design_app",
+    "name": "instant_gram",
+    "short_name": "instant_gram",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
