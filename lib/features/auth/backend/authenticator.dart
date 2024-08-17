@@ -1,10 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:lyza_insta_clone/features/auth/constants/constants.dart';
-import 'package:lyza_insta_clone/features/auth/models/auth_result.dart';
 import 'package:lyza_insta_clone/features/posts/typedefs/user_id.dart';
+import 'package:lyza_insta_clone/features/auth/models/auth_result.dart';
+import 'package:lyza_insta_clone/features/auth/constants/constants.dart';
 
 class Authenticator {
+  const Authenticator();
   UserId? get userId => FirebaseAuth.instance.currentUser?.uid;
   bool get isAlreadyLoggedIn => userId != null;
   String get displayName =>
